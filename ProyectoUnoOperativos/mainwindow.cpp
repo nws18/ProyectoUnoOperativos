@@ -18,5 +18,8 @@ void MainWindow::on_botonSalir_clicked(){
 
 void MainWindow::on_botonIniciar_clicked(){
     this->close();
+    ventanaSimulacion *ventana = new ventanaSimulacion;
+    ventana->show();
+    ventana->setVisible(true);
 
 }

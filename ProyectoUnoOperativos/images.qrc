@@ -3,5 +3,9 @@
         <file>images/boton-de-reproduccion.png</file>
         <file>images/logout.png</file>
         <file>images/flecha-de-reproducir.png</file>
+        <file>images/dinero.png</file>
+        <file>images/trafico.png</file>
+        <file>images/analitica.png</file>
+        <file>images/enviar-boton.png</file>
     </qresource>
 </RCC>
