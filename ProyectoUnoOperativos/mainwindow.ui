@@ -14,7 +14,7 @@
    <string>Configuración</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(203, 154, 130);</string>
+   <string notr="true">background-color: rgb(174, 226, 175);</string>
   </property>
   <property name="animated">
    <bool>true</bool>

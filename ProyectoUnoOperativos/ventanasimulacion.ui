@@ -14,7 +14,7 @@
    <string>Simulación</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(203, 154, 130);</string>
+   <string notr="true">background-color: rgb(174, 226, 175);</string>
   </property>
   <widget class="QTabWidget" name="tabWidget">
    <property name="geometry">
@@ -35,10 +35,10 @@
     <string notr="true"/>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(203, 154, 130);</string>
+    <string notr="true">background-color: rgb(174, 226, 175);</string>
    </property>
    <property name="currentIndex">
-    <number>2</number>
+    <number>0</number>
    </property>
    <widget class="QWidget" name="tab">
     <attribute name="title">
