@@ -25,11 +25,15 @@ CONFIG += c++11
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    ventanasimulacion.cpp
+    ventanasimulacion.cpp \
+    hilo.cpp \
+    configuracion.cpp
 
 HEADERS += \
         mainwindow.h \
-    ventanasimulacion.h
+    ventanasimulacion.h \
+    hilo.h \
+    configuracion.h
 
 FORMS += \
         mainwindow.ui \

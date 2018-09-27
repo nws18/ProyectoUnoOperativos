@@ -2,7 +2,6 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <indiceventanasimulacion.h>
 #include <ventanasimulacion.h>
 
 namespace Ui {
@@ -20,7 +19,6 @@ public:
 private slots:
 
     void on_botonSalir_clicked();
-
     void on_botonIniciar_clicked();
 
 private:
