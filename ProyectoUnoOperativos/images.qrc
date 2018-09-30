@@ -7,5 +7,8 @@
         <file>images/trafico.png</file>
         <file>images/analitica.png</file>
         <file>images/enviar-boton.png</file>
+        <file>images/correccion-de-error.png</file>
+        <file>images/bomba-de-la-estacion-de-combustible.png</file>
+        <file>images/icon.png</file>
     </qresource>
 </RCC>

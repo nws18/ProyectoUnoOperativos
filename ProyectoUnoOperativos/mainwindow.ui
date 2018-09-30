@@ -2,6 +2,9 @@
 <ui version="4.0">
  <class>MainWindow</class>
  <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -12,6 +15,9 @@
   </property>
   <property name="windowTitle">
    <string>Configuración</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
   </property>
   <property name="styleSheet">
    <string notr="true">background-color: rgb(174, 226, 175);</string>
@@ -35,7 +41,7 @@
      </font>
     </property>
     <property name="text">
-     <string>BIENVENIDO</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;BIENVENIDO&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_2">
@@ -43,9 +49,14 @@
      <rect>
       <x>60</x>
       <y>90</y>
-      <width>151</width>
+      <width>211</width>
       <height>17</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
     </property>
     <property name="text">
      <string>Cantidad de vehículos:</string>
@@ -56,9 +67,14 @@
      <rect>
       <x>60</x>
       <y>130</y>
-      <width>231</width>
-      <height>17</height>
+      <width>301</width>
+      <height>21</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
     </property>
     <property name="text">
      <string>Cantidad de carriles por sentido:</string>
@@ -69,9 +85,14 @@
      <rect>
       <x>60</x>
       <y>170</y>
-      <width>191</width>
+      <width>271</width>
       <height>17</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
     </property>
     <property name="text">
      <string>Pasos a desnivel superiores:</string>
@@ -82,9 +103,14 @@
      <rect>
       <x>60</x>
       <y>210</y>
-      <width>191</width>
+      <width>251</width>
       <height>17</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
     </property>
     <property name="text">
      <string>Pasos a desnivel inferiores:</string>
@@ -95,9 +121,14 @@
      <rect>
       <x>60</x>
       <y>250</y>
-      <width>211</width>
+      <width>281</width>
       <height>17</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
     </property>
     <property name="text">
      <string>Intersecciones con semáforos:</string>
@@ -108,9 +139,14 @@
      <rect>
       <x>60</x>
       <y>290</y>
-      <width>171</width>
-      <height>17</height>
+      <width>231</width>
+      <height>21</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
     </property>
     <property name="text">
      <string>Entradas a la autopista:</string>
@@ -121,9 +157,14 @@
      <rect>
       <x>60</x>
       <y>330</y>
-      <width>161</width>
-      <height>17</height>
+      <width>211</width>
+      <height>21</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
     </property>
     <property name="text">
      <string>Salidas de la autopista:</string>
@@ -132,7 +173,7 @@
    <widget class="QSpinBox" name="cantidadVehiculos">
     <property name="geometry">
      <rect>
-      <x>330</x>
+      <x>400</x>
       <y>80</y>
       <width>71</width>
       <height>26</height>
@@ -151,7 +192,7 @@
    <widget class="QSpinBox" name="cantidadCarriles">
     <property name="geometry">
      <rect>
-      <x>330</x>
+      <x>400</x>
       <y>120</y>
       <width>71</width>
       <height>26</height>
@@ -170,7 +211,7 @@
    <widget class="QSpinBox" name="PasosDesnivelSuperior">
     <property name="geometry">
      <rect>
-      <x>330</x>
+      <x>400</x>
       <y>160</y>
       <width>71</width>
       <height>26</height>
@@ -192,7 +233,7 @@
    <widget class="QSpinBox" name="pasosDesnvielInferior">
     <property name="geometry">
      <rect>
-      <x>330</x>
+      <x>400</x>
       <y>200</y>
       <width>71</width>
       <height>26</height>
@@ -211,7 +252,7 @@
    <widget class="QSpinBox" name="intersecciones">
     <property name="geometry">
      <rect>
-      <x>330</x>
+      <x>400</x>
       <y>240</y>
       <width>71</width>
       <height>26</height>
@@ -230,8 +271,8 @@
    <widget class="QSpinBox" name="cantidadEntradas">
     <property name="geometry">
      <rect>
-      <x>330</x>
-      <y>290</y>
+      <x>400</x>
+      <y>280</y>
       <width>71</width>
       <height>26</height>
      </rect>
@@ -249,8 +290,8 @@
    <widget class="QSpinBox" name="cantidaSalidas">
     <property name="geometry">
      <rect>
-      <x>330</x>
-      <y>330</y>
+      <x>400</x>
+      <y>320</y>
       <width>71</width>
       <height>26</height>
      </rect>
@@ -272,7 +313,7 @@
     <property name="geometry">
      <rect>
       <x>520</x>
-      <y>400</y>
+      <y>380</y>
       <width>91</width>
       <height>61</height>
      </rect>
@@ -315,8 +356,8 @@
    <widget class="QPushButton" name="botonSalir">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>394</y>
+      <x>40</x>
+      <y>370</y>
       <width>91</width>
       <height>61</height>
      </rect>
