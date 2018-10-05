@@ -9,11 +9,20 @@ class Configuracion : public QObject
 public:
     explicit Configuracion(QObject *parent = nullptr);
     Configuracion(int vehiculos, int carriles, int pasosDesnivel, int intersecciones, int entradas, int salidas);
-    void configurarSimulacion();
+    void setConfiguracion(int);
+    int getConfiguracion();
 
 signals:
 
 public slots:
+private:
+    int cantidadVehiculos;
+    int cantidadCarriles;
+    int cantidadPasosDesnivel;
+    int cantidadIntersecciones;
+    int cantidadEntradas;
+    int cantidadSalidas;
+
 };
 
 #endif // CONFIGURACION_H

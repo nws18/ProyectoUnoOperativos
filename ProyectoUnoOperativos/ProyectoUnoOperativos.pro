@@ -27,17 +27,27 @@ SOURCES += \
         mainwindow.cpp \
     ventanasimulacion.cpp \
     hilo.cpp \
-    configuracion.cpp
+    configuracion.cpp \
+    ventanaconfirmarsalida.cpp \
+    ventanacreditos.cpp \
+    escena.cpp \
+    imagen.cpp
 
 HEADERS += \
         mainwindow.h \
     ventanasimulacion.h \
     hilo.h \
-    configuracion.h
+    configuracion.h \
+    ventanaconfirmarsalida.h \
+    ventanacreditos.h \
+    escena.h \
+    imagen.h
 
 FORMS += \
         mainwindow.ui \
-    ventanasimulacion.ui
+    ventanasimulacion.ui \
+    ventanaconfirmarsalida.ui \
+    ventanacreditos.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

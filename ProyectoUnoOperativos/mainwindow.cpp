@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "configuracion.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -12,14 +13,19 @@ MainWindow::~MainWindow(){
 }
 
 void MainWindow::on_botonSalir_clicked(){
-    this->close();
+    ventanaConfirmarSalida *ventana = new ventanaConfirmarSalida;
+    ventana->show();
 }
-
 
 void MainWindow::on_botonIniciar_clicked(){
     this->close();
     ventanaSimulacion *ventana = new ventanaSimulacion;
     ventana->show();
-    ventana->setVisible(true);
+}
 
+void MainWindow::on_btnCreditos_clicked()
+{
+    this->close();
+    ventanaCreditos *ventana = new ventanaCreditos;
+    ventana->show();
 }

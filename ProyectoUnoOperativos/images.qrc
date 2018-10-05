@@ -10,5 +10,9 @@
         <file>images/correccion-de-error.png</file>
         <file>images/bomba-de-la-estacion-de-combustible.png</file>
         <file>images/icon.png</file>
+        <file>images/boton-de-borrar.png</file>
+        <file>images/confirmar.png</file>
+        <file>images/info.png</file>
+        <file>images/automovil.png</file>
     </qresource>
 </RCC>

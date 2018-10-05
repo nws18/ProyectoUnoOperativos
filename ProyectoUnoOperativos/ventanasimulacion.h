@@ -5,10 +5,13 @@
 #include <mainwindow.h>
 #include <QMutex>
 #include <hilo.h>
+#include <configuracion.h>
 
 namespace Ui {
 class ventanaSimulacion;
 }
+class escena;
+class hilo;
 
 class ventanaSimulacion : public QDialog
 {
@@ -26,7 +29,7 @@ private slots:
 
 private:
     Ui::ventanaSimulacion *ui;
-
+    escena *MiEscena;
     Hilo hilo;
     int valorHilo;
     QMutex mutexValorHilo;

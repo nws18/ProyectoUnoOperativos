@@ -1,9 +1,14 @@
 #include "ventanasimulacion.h"
 #include "ui_ventanasimulacion.h"
+#include "configuracion.h"
+#include "escena.h"
+#include "hilo.h"
 
-ventanaSimulacion::ventanaSimulacion(QWidget *parent) : QDialog(parent), ui(new Ui::ventanaSimulacion), hilo(10, 1000), valorHilo(0) {
+ventanaSimulacion::ventanaSimulacion(QWidget *parent):QDialog(parent), ui(new Ui::ventanaSimulacion), hilo(10, 1000), valorHilo(0){
     ui->setupUi(this);
-
+    MiEscena = new escena(this);
+    //MiHilo = new Hilo(this);
+    ui->graphicsView->setScene(MiEscena);
     //Conectar hilo con señal
     connect(&hilo, SIGNAL(signalHilo(int)), this, SLOT(setValorHilo(int)));
 }
