@@ -2,8 +2,8 @@
 #define ESCENA_H
 
 #include <QGraphicsScene>
-
-class imagen;
+#include <imagen.h>
+class Imagen;
 class escena : public QGraphicsScene
 {
     Q_OBJECT
@@ -12,7 +12,7 @@ public:
 public slots:
     void actualizar();
 private:
-    imagen *carro;
+    Imagen *carro;
 };
 
 #endif // ESCENA_H

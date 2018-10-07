@@ -8,10 +8,27 @@ class Hilo : public QThread {
     Q_OBJECT
 
 public:
-    explicit Hilo(QObject *parent = nullptr);
-    Hilo(int valorIncremento, int tiempo);
+    Hilo(QObject *parent = nullptr);
+    void start(int msec,Priority p);
+    inline bool isRunning() const;
+    inline int msec() const;
+signals:
+    void already();
+protected:
+    void run();
+private:
+    bool mRunning;
+    int mMsec;
+};
 
-    //Métodos para manejar el hilo
+bool Hilo::isRunning() const {
+    return mRunning;
+}
+
+int Hilo::msec() const {
+    return mMsec;
+}
+    /*Métodos para manejar el hilo
     void run();
     void stop();
     void restart();
@@ -29,7 +46,7 @@ private:
     bool estaEjecutandose;
     int incremento;
     int milisegundos;
+*/
 
-};
 
 #endif // HILO_H

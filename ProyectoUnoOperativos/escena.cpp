@@ -8,28 +8,28 @@
 
 escena::escena(QObject *parent) : QGraphicsScene(POSX, POSY, WIDTH, HEIGHT, parent) {
 
-    /*carro = new imagen(":/automovil.png");
+    carro = new Imagen(":automovil.png");
     carro->setPosicion(QPointF(0.0,0.0));
     carro->setVelocidad(QPointF(1.0,1.0));
-    carro->setTamano(QSizeF(20.0,20.0));
+    carro->setTamano(QSizeF(100.0,100.0));
     addItem(carro);
-    */
+
 
 }
 
 void escena::actualizar() {
-    /*int x = carro->posicion().x;
-    int y = carro->posicion().y;
-    int xVel= carro->velocidad().x;
-    int yVel = carro->velocidad().y;
+    int x = carro->posicion().x();
+    int y = carro->posicion().y();
+    int xVel= carro->velocidad().x();
+    int yVel = carro->velocidad().y();
 
     x+= xVel;
     y += yVel;
-    yVel += 0.5;
+    yVel += 0.3;
 
-    carro->setPosicion(QPoint(x,y));
-    carro->setVelocidad(QPoint(xVel,yVel));
+    carro->setPosicion(QPointF(x,y));
+    carro->setVelocidad(QPointF(xVel,yVel));
     update();
-    */
+
 }
 

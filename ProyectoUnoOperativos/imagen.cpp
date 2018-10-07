@@ -1,9 +1,9 @@
 #include "imagen.h"
 #include "QPainter"
 
-Imagen::Imagen(const QString &filename, QGraphicsItem *parent) : QGraphicsItem()
+Imagen::Imagen(const QString &Mfilename, QGraphicsItem *parent) : QGraphicsItem()
 {
-    ObjFilename = filename;
+    ObjFilename = Mfilename;
 }
 
 QRectF Imagen::boundingRect() const {

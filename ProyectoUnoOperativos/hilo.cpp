@@ -2,10 +2,25 @@
 
 Hilo::Hilo(QObject *parent) : QThread(parent)
 {
-
+    mRunning = false;
+    mMsec = 0;
 }
 
-Hilo::Hilo(int valorIncremento, int tiempo): estaEjecutandose(true), incremento(valorIncremento), milisegundos(tiempo) {
+void Hilo::start(int msec,QThread::Priority p) {
+    mMsec = msec;
+    mRunning = true;
+    QThread::start(p);
+}
+
+void Hilo::run() {
+    while(mRunning) {
+        emit already();
+        msleep(mMsec);
+
+    }
+}
+
+/*Hilo::Hilo(int valorIncremento, int tiempo): estaEjecutandose(true), incremento(valorIncremento), milisegundos(tiempo) {
     QThread::setObjectName("Hilo");
     milisegundos = tiempo;
 }
@@ -39,4 +54,5 @@ void Hilo::setIncremento(int valor) {
 void Hilo::setMilisegundos(int milisegundos){
    Hilo:: milisegundos = milisegundos;
 }
+*/
 

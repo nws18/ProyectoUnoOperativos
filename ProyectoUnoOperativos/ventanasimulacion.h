@@ -20,7 +20,8 @@ class ventanaSimulacion : public QDialog
 public:
     explicit ventanaSimulacion(QWidget *parent = nullptr);
     ~ventanaSimulacion();
-
+signals:
+    void update();
 private slots:
     void on_pushButton_clicked();
     void setValorHilo(int);
@@ -30,7 +31,7 @@ private slots:
 private:
     Ui::ventanaSimulacion *ui;
     escena *MiEscena;
-    Hilo hilo;
+    Hilo *hilo;
     int valorHilo;
     QMutex mutexValorHilo;
 

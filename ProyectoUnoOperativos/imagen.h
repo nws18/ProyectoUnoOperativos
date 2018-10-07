@@ -9,7 +9,7 @@
 class Imagen : public QGraphicsItem
 {
 public:
-    Imagen(const QString &filename, QGraphicsItem *parent = nullptr);
+    Imagen(const QString &Mfilename, QGraphicsItem *parent = nullptr);
     inline void setPosicion(const QPointF &pos);
     inline void setVelocidad(const QPointF &vel);
     inline void setTamano(const QSizeF &tam);
