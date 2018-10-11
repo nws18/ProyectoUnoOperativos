@@ -28,25 +28,6 @@ bool Hilo::isRunning() const {
 int Hilo::msec() const {
     return mMsec;
 }
-    /*Métodos para manejar el hilo
-    void run();
-    void stop();
-    void restart();
-
-    int getIncremento();
-    void setIncremento(int);
-    void setMilisegundos(int);
-
-//Señales del hilo
-signals:
-    void signalHilo(int);
-
-public slots:
-private:
-    bool estaEjecutandose;
-    int incremento;
-    int milisegundos;
-*/
 
 
 #endif // HILO_H

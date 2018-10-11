@@ -8,7 +8,7 @@ class Configuracion : public QObject
     Q_OBJECT
 public:
     explicit Configuracion(QObject *parent = nullptr);
-    Configuracion(int vehiculos, int carriles, int pasosDesnivel, int intersecciones, int entradas, int salidas);
+    Configuracion();
     void setConfiguracion(int);
     int getConfiguracion();
 

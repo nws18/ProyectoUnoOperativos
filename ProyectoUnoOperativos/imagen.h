@@ -5,14 +5,20 @@
 #include <qgraphicsitem.h>
 #include <QPointF>
 #include <QSizeF>
+#include <QImage>
+#include <imagen.h>
+#include <iostream>
+using namespace std;
 
 class Imagen : public QGraphicsItem
 {
+
 public:
-    Imagen(const QString &Mfilename, QGraphicsItem *parent = nullptr);
+    Imagen(/*const QString &Mfilename,*/ QGraphicsItem *parent = nullptr);
     inline void setPosicion(const QPointF &pos);
     inline void setVelocidad(const QPointF &vel);
     inline void setTamano(const QSizeF &tam);
+    inline void setFileName(const QString &fileName);
 
     inline QPointF posicion() const;
     inline QPointF velocidad() const;
@@ -40,6 +46,10 @@ void Imagen::setVelocidad(const QPointF &vel){
 
 void Imagen::setTamano(const QSizeF &size){
     ObjTam = size;
+}
+
+void Imagen::setFileName(const QString &fileName) {
+    ObjFilename = fileName;
 }
 
 QPointF Imagen::posicion() const {

@@ -3,6 +3,10 @@
 
 #include <QGraphicsScene>
 #include <imagen.h>
+#include <iostream>
+
+using namespace std;
+
 class Imagen;
 class escena : public QGraphicsScene
 {
@@ -12,7 +16,17 @@ public:
 public slots:
     void actualizar();
 private:
-    Imagen *carro;
+    Imagen *vehiculo1;
+    Imagen *vehiculo2;
+    Imagen *vehiculo3;
+    Imagen *vehiculo4;
+    Imagen *vehiculo5;
+    Imagen *vehiculo6;
+    Imagen *vehiculo7;
+    Imagen *vehiculo8;
+    Imagen *vector[];
 };
+
+
 
 #endif // ESCENA_H

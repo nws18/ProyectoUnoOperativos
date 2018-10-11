@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1033</width>
-    <height>610</height>
+    <width>1201</width>
+    <height>622</height>
    </rect>
   </property>
   <property name="font">
@@ -26,8 +26,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1041</width>
-     <height>611</height>
+     <width>1211</width>
+     <height>631</height>
     </rect>
    </property>
    <property name="toolTip">
@@ -52,8 +52,8 @@
     <widget class="QPushButton" name="pushButton">
      <property name="geometry">
       <rect>
-       <x>910</x>
-       <y>480</y>
+       <x>1110</x>
+       <y>510</y>
        <width>81</width>
        <height>71</height>
       </rect>
@@ -75,19 +75,6 @@
       </size>
      </property>
     </widget>
-    <widget class="QPushButton" name="btnIniciar">
-     <property name="geometry">
-      <rect>
-       <x>530</x>
-       <y>500</y>
-       <width>89</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Iniciar</string>
-     </property>
-    </widget>
     <widget class="QLabel" name="pruebaHilo">
      <property name="geometry">
       <rect>
@@ -104,10 +91,10 @@
     <widget class="QGraphicsView" name="graphicsView">
      <property name="geometry">
       <rect>
-       <x>0</x>
-       <y>0</y>
-       <width>1031</width>
-       <height>461</height>
+       <x>-20</x>
+       <y>-10</y>
+       <width>1121</width>
+       <height>611</height>
       </rect>
      </property>
     </widget>
@@ -148,10 +135,10 @@
     <widget class="QCheckBox" name="cbCierreCarril">
      <property name="geometry">
       <rect>
-       <x>130</x>
-       <y>130</y>
+       <x>180</x>
+       <y>100</y>
        <width>171</width>
-       <height>23</height>
+       <height>41</height>
       </rect>
      </property>
      <property name="font">
@@ -166,10 +153,10 @@
     <widget class="QCheckBox" name="cbSemaforoMalFuncionamiento">
      <property name="geometry">
       <rect>
-       <x>130</x>
-       <y>160</y>
+       <x>180</x>
+       <y>130</y>
        <width>321</width>
-       <height>23</height>
+       <height>41</height>
       </rect>
      </property>
      <property name="font">
@@ -184,10 +171,10 @@
     <widget class="QCheckBox" name="cbPasosDesnivel">
      <property name="geometry">
       <rect>
-       <x>130</x>
-       <y>190</y>
-       <width>231</width>
-       <height>23</height>
+       <x>180</x>
+       <y>160</y>
+       <width>241</width>
+       <height>41</height>
       </rect>
      </property>
      <property name="font">
@@ -202,10 +189,10 @@
     <widget class="QCheckBox" name="cbCierreEntradas">
      <property name="geometry">
       <rect>
-       <x>130</x>
-       <y>220</y>
+       <x>180</x>
+       <y>190</y>
        <width>201</width>
-       <height>31</height>
+       <height>41</height>
       </rect>
      </property>
      <property name="font">
@@ -220,10 +207,10 @@
     <widget class="QCheckBox" name="cbCierreSalidas">
      <property name="geometry">
       <rect>
-       <x>130</x>
-       <y>250</y>
+       <x>180</x>
+       <y>220</y>
        <width>171</width>
-       <height>23</height>
+       <height>41</height>
       </rect>
      </property>
      <property name="font">
@@ -256,8 +243,8 @@
     <widget class="QLabel" name="label_6">
      <property name="geometry">
       <rect>
-       <x>70</x>
-       <y>60</y>
+       <x>180</x>
+       <y>40</y>
        <width>291</width>
        <height>31</height>
       </rect>
@@ -274,8 +261,8 @@
     <widget class="QLabel" name="label_7">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>50</y>
+       <x>120</x>
+       <y>30</y>
        <width>50</width>
        <height>50</height>
       </rect>
@@ -290,7 +277,7 @@
     <widget class="Line" name="line_3">
      <property name="geometry">
       <rect>
-       <x>360</x>
+       <x>520</x>
        <y>30</y>
        <width>20</width>
        <height>391</height>
@@ -303,8 +290,8 @@
     <widget class="QLabel" name="label_8">
      <property name="geometry">
       <rect>
-       <x>380</x>
-       <y>50</y>
+       <x>640</x>
+       <y>30</y>
        <width>50</width>
        <height>50</height>
       </rect>
@@ -319,8 +306,8 @@
     <widget class="QLabel" name="label_9">
      <property name="geometry">
       <rect>
-       <x>440</x>
-       <y>70</y>
+       <x>710</x>
+       <y>50</y>
        <width>181</width>
        <height>17</height>
       </rect>
@@ -337,8 +324,8 @@
     <widget class="QPushButton" name="btnAgregarEstacionesServicio">
      <property name="geometry">
       <rect>
-       <x>120</x>
-       <y>390</y>
+       <x>270</x>
+       <y>400</y>
        <width>89</width>
        <height>25</height>
       </rect>

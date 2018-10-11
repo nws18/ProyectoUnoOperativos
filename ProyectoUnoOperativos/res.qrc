@@ -1,5 +1,12 @@
 <RCC>
     <qresource prefix="/">
-        <file>automovil.png</file>
+        <file>bus.png</file>
+        <file>camion.png</file>
+        <file>camion2.png</file>
+        <file>carro1.png</file>
+        <file>carro2.png</file>
+        <file>carro3.png</file>
+        <file>carro4.png</file>
+        <file>motoSinFondo.png</file>
     </qresource>
 </RCC>
