@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>444</width>
-    <height>323</height>
+    <width>506</width>
+    <height>376</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,8 +19,8 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>130</x>
-     <y>40</y>
+     <x>170</x>
+     <y>10</y>
      <width>161</width>
      <height>81</height>
     </rect>
@@ -32,11 +32,20 @@
   <widget class="QPushButton" name="btnSalir">
    <property name="geometry">
     <rect>
-     <x>320</x>
-     <y>240</y>
+     <x>400</x>
+     <y>290</y>
      <width>91</width>
      <height>61</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;
+background: none;
+border: nonde;
+background-repeat: none;</string>
    </property>
    <property name="text">
     <string/>
@@ -50,6 +59,19 @@
      <width>50</width>
      <height>50</height>
     </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>70</y>
+     <width>261</width>
+     <height>261</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Desarrollado por:&lt;br/&gt;Nicole Fonseca&lt;br/&gt;Wilmer Mata&lt;br/&gt;Javier Roldán&lt;br/&gt;&lt;br/&gt;Versión 1.0&lt;br/&gt;Octubre 2018&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;Realizado en C++&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
  </widget>

@@ -61,6 +61,12 @@
      <property name="cursor">
       <cursorShape>PointingHandCursor</cursorShape>
      </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: transparent;
+background: none;
+border: nonde;
+background-repeat: none;</string>
+     </property>
      <property name="text">
       <string/>
      </property>
@@ -378,6 +384,12 @@
      <property name="toolTipDuration">
       <number>1000</number>
      </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: transparent;
+background: none;
+border: nonde;
+background-repeat: none;</string>
+     </property>
      <property name="text">
       <string/>
      </property>
@@ -409,6 +421,12 @@
      </property>
      <property name="toolTipDuration">
       <number>1000</number>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: transparent;
+background: none;
+border: nonde;
+background-repeat: none;</string>
      </property>
      <property name="text">
       <string/>
@@ -467,6 +485,12 @@
      </property>
      <property name="toolTipDuration">
       <number>1000</number>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: transparent;
+background: none;
+border: nonde;
+background-repeat: none;</string>
      </property>
      <property name="text">
       <string/>
@@ -545,6 +569,12 @@
      <property name="toolTipDuration">
       <number>1000</number>
      </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: transparent;
+background: none;
+border: nonde;
+background-repeat: none;</string>
+     </property>
      <property name="text">
       <string/>
      </property>
@@ -557,6 +587,19 @@
        <width>30</width>
        <height>30</height>
       </size>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_reporte">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>30</y>
+       <width>581</width>
+       <height>351</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>hola</string>
      </property>
     </widget>
    </widget>

@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui widgets
+QT       += core gui widgets printsupport
 
 TARGET = ProyectoUnoOperativos
 TEMPLATE = app
@@ -27,7 +27,6 @@ SOURCES += \
         mainwindow.cpp \
     ventanasimulacion.cpp \
     hilo.cpp \
-    configuracion.cpp \
     ventanaconfirmarsalida.cpp \
     ventanacreditos.cpp \
     escena.cpp \
@@ -37,7 +36,6 @@ HEADERS += \
         mainwindow.h \
     ventanasimulacion.h \
     hilo.h \
-    configuracion.h \
     ventanaconfirmarsalida.h \
     ventanacreditos.h \
     escena.h \

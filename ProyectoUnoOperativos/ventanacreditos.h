@@ -8,8 +8,7 @@ namespace Ui {
 class ventanaCreditos;
 }
 
-class ventanaCreditos : public QDialog
-{
+class ventanaCreditos : public QDialog {
     Q_OBJECT
 
 public:

@@ -1,16 +1,17 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include "configuracion.h"
 
-MainWindow::MainWindow(QWidget *parent) :
-    QMainWindow(parent),
-    ui(new Ui::MainWindow){
+MainWindow::MainWindow(QWidget *parent) :QMainWindow(parent), ui(new Ui::MainWindow) {
     ui->setupUi(this);
+    //Solo mostrar botón de minimizar
+    this->setWindowFlags(Qt::WindowMinimizeButtonHint);
+    //Posición ventana
+    this->move(375,45);
 }
 
-MainWindow::~MainWindow(){
+/*MainWindow::~MainWindow(){
     delete ui;
-}
+}*/
 
 void MainWindow::on_botonSalir_clicked(){
     ventanaConfirmarSalida *ventana = new ventanaConfirmarSalida;
@@ -23,8 +24,8 @@ void MainWindow::on_botonIniciar_clicked(){
     ventana->show();
 }
 
-void MainWindow::on_btnCreditos_clicked()
-{
+
+void MainWindow::on_btnCreditos_clicked() {
     this->close();
     ventanaCreditos *ventana = new ventanaCreditos;
     ventana->show();

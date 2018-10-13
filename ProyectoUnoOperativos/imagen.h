@@ -10,11 +10,10 @@
 #include <iostream>
 using namespace std;
 
-class Imagen : public QGraphicsItem
-{
+class Imagen : public QGraphicsItem {
 
 public:
-    Imagen(/*const QString &Mfilename,*/ QGraphicsItem *parent = nullptr);
+    Imagen(QGraphicsItem *parent = nullptr);
     inline void setPosicion(const QPointF &pos);
     inline void setVelocidad(const QPointF &vel);
     inline void setTamano(const QSizeF &tam);

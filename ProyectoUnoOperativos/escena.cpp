@@ -1,13 +1,17 @@
 #include "escena.h"
 #include "imagen.h"
+#include <iostream>
 
 #define POSX 0.0
 #define POSY 0.0
 #define WIDTH 1121.0
 #define HEIGHT 590.0
 
+using namespace std;
+
 escena::escena(QObject *parent) : QGraphicsScene(POSX, POSY, WIDTH, HEIGHT, parent) {
-    vector[1] = new Imagen[4];
+    //vector[1] = new Imagen[8];
+    //Imagen vector[5];
     vehiculo1 = new Imagen();
     vehiculo1->setPosicion(QPointF(0.0,10.0));
     vehiculo1->setVelocidad(QPointF(1.0,1.0));
@@ -56,20 +60,39 @@ escena::escena(QObject *parent) : QGraphicsScene(POSX, POSY, WIDTH, HEIGHT, pare
     vehiculo8->setTamano(QSizeF(157.0,62.0));
     vehiculo8->setFileName(":motoSinFondo.png");
 
+/*
+    vector[0] = vehiculo1;
+    vector[1] = vehiculo2;
+    vector[2] = vehiculo3;
+
+    vehiculos->append(vehiculo1);
+    vehiculos->append(vehiculo2);
+    vehiculos->append(vehiculo3);
+    vehiculos->append(vehiculo4);
+    //vehiculos.append(vehiculo5);
+    //vehiculos.append(vehiculo6);
+    //vehiculos.append(vehiculo7);
+   // vehiculos.append(vehiculo8);
+
+int i;
+    for(i = 0; i < vehiculos.size(); ++i) {
+        cout << vehiculos.size();
+    }
 
     vector[0] = vehiculo1;
     vector[1] = vehiculo2;
-    /*vector[2] = vehiculo3;
+    //vector[2] = vehiculo3;
+
    vector[3] = vehiculo4;
    vector[4] = vehiculo5;
    vector[5] = vehiculo6;
    vector[6] = vehiculo7;
    vector[7] = vehiculo8;
-*/
-    //addItem(vector[0]);
-    ///addItem(vector[1]);
-    addItem(vehiculo3);
 
+    addItem(vector[0]);
+    addItem(vector[1]);
+    addItem(vehiculo3);
+*/
    /*int cantidadVehiculos;
    for(cantidadVehiculos = 0; cantidadVehiculos < 8; cantidadVehiculos++) {
         addItem(vector[cantidadVehiculos]);
@@ -77,9 +100,12 @@ escena::escena(QObject *parent) : QGraphicsScene(POSX, POSY, WIDTH, HEIGHT, pare
 */
 }
 
+/*
+ * Actualiza la posición de los vehículos
+ */
 void escena::actualizar() {
 
-    int x = vehiculo1->posicion().x();
+    /*int x = vehiculo1->posicion().x();
     int y = vehiculo1->posicion().y();
     int xVel= vehiculo1->velocidad().x();
     int yVel = vehiculo1->velocidad().y();
@@ -92,6 +118,7 @@ void escena::actualizar() {
     vehiculo1->setPosicion(QPointF(x,y));
     vehiculo1->setVelocidad(QPointF(xVel,yVel));
     update();
+    */
 }
 
 

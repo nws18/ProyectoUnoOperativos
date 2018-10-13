@@ -38,6 +38,15 @@
      <height>41</height>
     </rect>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;
+background: none;
+border: nonde;
+background-repeat: none;</string>
+   </property>
    <property name="text">
     <string>Sí</string>
    </property>
@@ -60,6 +69,15 @@
      <width>101</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;
+background: none;
+border: nonde;
+background-repeat: none;</string>
    </property>
    <property name="text">
     <string>No</string>

@@ -1,7 +1,6 @@
 #include <hilo.h>
 
-Hilo::Hilo(QObject *parent) : QThread(parent)
-{
+Hilo::Hilo(QObject *parent) : QThread(parent) {
     mRunning = false;
     mMsec = 0;
 }

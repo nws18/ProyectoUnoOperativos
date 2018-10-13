@@ -4,12 +4,13 @@
 #include <QGraphicsScene>
 #include <imagen.h>
 #include <iostream>
+#include <QList>
+#include <QVector>
 
 using namespace std;
 
 class Imagen;
-class escena : public QGraphicsScene
-{
+class escena : public QGraphicsScene {
     Q_OBJECT
 public:
     escena(QObject *parent = nullptr);
@@ -24,9 +25,7 @@ private:
     Imagen *vehiculo6;
     Imagen *vehiculo7;
     Imagen *vehiculo8;
-    Imagen *vector[];
+    //Imagen *vector[];
 };
-
-
 
 #endif // ESCENA_H

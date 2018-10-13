@@ -7,8 +7,7 @@ namespace Ui {
 class ventanaConfirmarSalida;
 }
 
-class ventanaConfirmarSalida : public QDialog
-{
+class ventanaConfirmarSalida : public QDialog {
     Q_OBJECT
 
 public:
@@ -17,7 +16,6 @@ public:
 
 private slots:
     void on_btnSi_clicked();
-
     void on_btnNo_clicked();
 
 private:
