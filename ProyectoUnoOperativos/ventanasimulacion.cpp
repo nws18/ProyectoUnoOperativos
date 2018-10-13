@@ -20,7 +20,7 @@ ventanaSimulacion::ventanaSimulacion(QWidget *parent):QDialog(parent), ui(new Ui
      });
 
      connect(this, &ventanaSimulacion::update, MiEscena, &escena::actualizar);
-     hilo->start(SEC, QThread::HighestPriority);
+     hilo->start(SEC, QThread::NormalPriority);
 
 }
 
